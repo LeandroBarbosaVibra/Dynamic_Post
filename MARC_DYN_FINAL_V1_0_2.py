@@ -436,16 +436,16 @@ class MainApplication:
         title_frame.pack(fill=tk.X, padx=10, pady=10)
         
         title_content = tk.Frame(title_frame, bg='#d4542a')
-        title_content.pack(fill=tk.X, padx=(5, 90), pady=5)
+        title_content.pack(fill=tk.X, padx=5, pady=5)
         
-        guideline_btn = tk.Button(title_frame, text="Guideline", command=open_guideline_pdf,
+        guideline_btn = tk.Button(title_content, text="Guideline", command=open_guideline_pdf,
                                   font=('Arial', 8, 'bold'), bg='#FFEB3B', fg='#333333',
                                   relief='raised', bd=2, cursor='hand2', padx=8, pady=2,
                                   activebackground='#FFC107', activeforeground='#333333')
-        guideline_btn.place(relx=1.0, x=-8, y=8, anchor='ne')
+        guideline_btn.pack(side=tk.RIGHT, padx=5, pady=5)
         
         title_center = tk.Frame(title_content, bg='#d4542a')
-        title_center.pack(fill=tk.X, expand=True)
+        title_center.pack(side=tk.LEFT, fill=tk.X, expand=True)
         
         tk.Label(title_center, text="Marc Dynamic Analysis Tool", font=('Arial', 16, 'bold'),
                  fg='white', bg='#d4542a', pady=8).pack(anchor='center')

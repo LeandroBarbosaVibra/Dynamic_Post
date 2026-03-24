@@ -8,7 +8,7 @@ Marc Mentat Dynamic Frequency Analysis with Professional UI and Auto-Detection
 
 Author: Leandro Barbosa
 
-Version: 1.0.1 
+Version: 1.0.3 
 """
 
 import os
@@ -475,7 +475,7 @@ class MainApplication:
         
         info_frame = ttk.LabelFrame(self.root, text="Marc Dynamic Analysis Information", padding="15")
         info_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
-        info_text = """Marc Dynamic Analysis Tool - V1.0.1
+        info_text = """Marc Dynamic Analysis Tool - V1.0.3
 
 This tool performs frequency response analysis on Marc Mentat solution files:
 
